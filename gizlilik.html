@@ -111,7 +111,7 @@
 
   <header class="page-header">
     <h1>Parametre — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-    <p class="updated">Son güncelleme / Last updated: 25 Mayıs 2026 / May 25, 2026</p>
+    <p class="updated">Son güncelleme / Last updated: 16 Eylül 2026 / September 16, 2026</p>
   </header>
 
   <nav class="lang-nav">
@@ -125,7 +125,7 @@
     <section class="policy">
       <h2>Özet (Önemli)</h2>
       <p>Parametre yerel-öncelikli bir kişisel finans uygulamasıdır. Finansal verileriniz <strong>sadece kendi cihazınızda</strong> saklanır ve hiçbir zaman uygulama geliştiricisinin sunucularına gönderilmez. Hiçbir kullanıcı hesabı, e-posta kaydı veya online profil oluşturulmaz.</p>
-      <p><strong>Tek dış iletişim</strong>: piyasa fiyatlarını çekmek için resmi/ücretsiz kamuya açık API'lere (TCMB, CoinGecko, TEFAS, Binance, Stooq) yalnızca sembol kodu (örn. "USD", "BTC") gönderilir. Hiçbir kullanıcı kimliği veya finansal tutar bu API'lere iletilmez. Hisse senedi ve altın fiyatları manuel olarak kullanıcı tarafından girilir.</p>
+      <p><strong>Tek dış iletişim</strong>: piyasa fiyatlarını çekmek için resmi/ücretsiz kamuya açık API'lere (TCMB, CoinGecko, TEFAS, Binance) yalnızca sembol kodu (örn. "USD", "BTC") gönderilir. Hiçbir kullanıcı kimliği veya finansal tutar bu API'lere iletilmez. Bireysel BIST hisse fiyatları manuel olarak kullanıcı tarafından girilir.</p>
       <p><strong>Çökme raporu ve kullanım istatistikleri</strong>: Uygulama Google Firebase'in iki servisini kullanır:</p>
       <ul>
         <li><strong>Firebase Crashlytics</strong> — beklenmedik kapanmada anonim çökme yığını (stack trace, cihaz modeli, iOS sürümü, app sürümü) Google sunucularına gönderilir. <strong>Kullanıcı kimliği veya finansal veri içermez.</strong></li>
@@ -211,12 +211,11 @@
       <p>Aşağıdaki kamuya açık API'ler <strong>yalnızca piyasa fiyat verisi</strong> almak için kullanılır. Hiçbirine kullanıcıya özgü veri (ad, kayıt, finansal tutar) gönderilmez:</p>
       <ul>
         <li><strong>TCMB</strong> (www.tcmb.gov.tr): resmi günlük döviz kurları</li>
-        <li><strong>CoinGecko</strong> (api.coingecko.com): kripto fiyatları</li>
+        <li><strong>CoinGecko</strong> (api.coingecko.com): kripto fiyatları ve ons altın (PAXG) — gram altın TCMB kuruyla türetilir</li>
         <li><strong>TEFAS</strong> (www.tefas.gov.tr): Türkiye yatırım fonu fiyatları</li>
         <li><strong>Binance</strong> (api.binance.com): kripto yedek fiyat kaynağı</li>
-        <li><strong>Stooq</strong> (stooq.com): dünya endeksleri (BIST 100, NASDAQ, S&amp;P 500) için tarihsel kapanış verisi</li>
       </ul>
-      <p>Bu servislere yalnızca sembol kodu (örn. "USD", "BTC", "^xu100") gönderilir. <strong>Hisse senedi ve altın için otomatik fiyat servisi yoktur</strong> — kullanıcı birim fiyatı manuel olarak girer.</p>
+      <p>Bu servislere yalnızca sembol kodu (örn. "USD", "BTC", "pax-gold") gönderilir. <strong>Bireysel BIST hisse fiyatları için otomatik fiyat servisi yoktur</strong> — kullanıcı birim fiyatı manuel olarak girer.</p>
       <p><strong>Google AdMob</strong> (Free tier kullanıcıları için):</p>
       <ul>
         <li>Free tier kullanıcılarına banner ve native reklamlar gösterilir</li>
@@ -274,7 +273,7 @@
       <p><strong>b) Erişim hakkı</strong>: Verileriniz tamamen cihazınızda olduğu için, uygulama ekranlarından doğrudan erişebilirsiniz. Ayarlar &gt; Veri &gt; Yedek Çıkar ile JSON formatında tam kopyasını alabilirsiniz.</p>
       <p><strong>c) Düzeltme hakkı</strong>: Her kaydı uygulama içinde düzenleyebilirsiniz.</p>
       <p><strong>d) Silme hakkı (unutulma hakkı)</strong>: Ayarlar &gt; Veri &gt; Tüm Verileri Sil ile anında ve geri dönülemez biçimde tüm verileriniz silinir. Uygulamayı kaldırmak da aynı sonucu üretir.</p>
-      <p><strong>e) İşlemeyi sınırlama hakkı</strong>: Premium üyeliğe geçerek reklam veri toplamasını tamamen durdurabilirsiniz. Free tier'da iOS Ayarlar &gt; Gizlilik &gt; İzleme'den "İzleme İzin Vermeyi Tüm Uygulamalardan İste"yi seçerek IDFA'yı engelleyebilirsiniz. Uygulama içi çökme raporu/analitik gönderimi yoktur — sınırlanacak işleme yok. iOS sisteminin Apple'a gönderdiği anonim analitik kayıtlarını iOS Ayarlar &gt; Gizlilik &gt; Analiz üzerinden kapatabilirsiniz.</p>
+      <p><strong>e) İşlemeyi sınırlama hakkı</strong>: Premium üyeliğe geçerek reklam veri toplamasını tamamen durdurabilirsiniz. Free tier'da iOS Ayarlar &gt; Gizlilik &gt; İzleme'den "İzleme İzin Vermeyi Tüm Uygulamalardan İste"yi seçerek IDFA'yı engelleyebilirsiniz. Uygulama, Bölüm 5'te açıklandığı gibi anonim çökme raporu (Firebase Crashlytics) ve anonim kullanım istatistiği (Firebase Analytics) gönderir; bunlar finansal veri veya kullanıcı kimliği içermez. Bu gönderimi durdurmak isterseniz destek@ adresinden talep iletebilirsiniz. iOS sisteminin Apple'a gönderdiği anonim analitik kayıtlarını iOS Ayarlar &gt; Gizlilik &gt; Analiz üzerinden kapatabilirsiniz.</p>
       <p><strong>f) Veri taşınabilirliği hakkı</strong>: Ayarlar &gt; Yedek Çıkar ile verileriniz JSON formatında dışa aktarılabilir; başka bir uygulamaya taşıma serbesttir.</p>
       <p><strong>g) İtiraz hakkı</strong>: Uygulama içinde otomatik karar verme veya kullanıcı profili oluşturma yapılmaz. Free tier'da gösterilen AdMob reklamları için, ATT promptunda izin vermeyerek kişiselleştirilmiş reklam hedeflemesine itiraz edebilirsiniz. Premium üyelikte hiç reklam gösterilmez.</p>
       <p><strong>h) Şikayet hakkı</strong>: KVKK Kurumu'na (KVKK.gov.tr) başvurabilirsiniz.</p>
@@ -348,7 +347,7 @@
     <section class="policy">
       <h2>Summary (Important)</h2>
       <p>Parametre is a local-first personal finance application. Your financial data is stored <strong>only on your own device</strong> and is never sent to the developer's servers. No user account, email registration, or online profile is created.</p>
-      <p><strong>Only external communication</strong>: to fetch market prices, only symbol codes (e.g. "USD", "BTC") are sent to official/free public APIs (TCMB, CoinGecko, TEFAS, Binance, Stooq). No user identity or financial amount is ever transmitted to these APIs. Stock and gold unit prices are entered manually by the user.</p>
+      <p><strong>Only external communication</strong>: to fetch market prices, only symbol codes (e.g. "USD", "BTC") are sent to official/free public APIs (TCMB, CoinGecko, TEFAS, Binance). No user identity or financial amount is ever transmitted to these APIs. Unit prices for individual BIST stocks are entered manually by the user.</p>
       <p>This app uses <strong>Google Firebase</strong> for two services (Free + Premium users):</p>
       <ul>
         <li><strong>Firebase Crashlytics</strong>: Anonymous crash reports (stack trace, device model, iOS version, app version) sent to Google servers if the app unexpectedly closes. No user identity or financial data.</li>
@@ -437,12 +436,11 @@
       <p>The following public APIs are used <strong>only for market price data</strong>. No user-specific information (name, record, amounts) is sent:</p>
       <ul>
         <li><strong>TCMB (Central Bank of Turkey)</strong>: official daily currency rates</li>
-        <li><strong>CoinGecko</strong>: cryptocurrency prices</li>
+        <li><strong>CoinGecko</strong>: crypto prices and gold ounce (PAXG) — gram gold is derived using the TCMB rate</li>
         <li><strong>TEFAS</strong>: Turkish investment fund prices</li>
         <li><strong>Binance</strong>: backup crypto price source</li>
-        <li><strong>Stooq</strong>: world index historical closing data (BIST 100, NASDAQ, S&amp;P 500)</li>
       </ul>
-      <p>Only symbol codes (e.g. "USD", "BTC", "^xu100") are sent. <strong>There is no automatic price service for stocks and gold</strong> — the user enters unit prices manually.</p>
+      <p>Only symbol codes (e.g. "USD", "BTC", "pax-gold") are sent. <strong>There is no automatic price service for individual BIST stocks</strong> — the user enters unit prices manually.</p>
       <p><strong>Google AdMob</strong> (for Free tier users):</p>
       <ul>
         <li>Free tier users are shown banner and native ads</li>
@@ -483,7 +481,7 @@
       <p><strong>b) Right to access</strong>: Since your data is entirely on your device, you have direct access via the app screens. Settings &gt; Data &gt; Export Backup provides a full JSON copy.</p>
       <p><strong>c) Right to rectification</strong>: You can edit every record within the app.</p>
       <p><strong>d) Right to erasure (right to be forgotten)</strong>: Settings &gt; Data &gt; Delete All Data instantly and irreversibly deletes all your data. Uninstalling the app has the same effect.</p>
-      <p><strong>e) Right to restriction</strong>: You may stop ad-related data collection entirely by upgrading to Premium. On the Free tier, you may block IDFA by selecting "Ask Apps Not To Track" under iOS Settings &gt; Privacy &gt; Tracking. The app sends no in-app crash reports or analytics — nothing to restrict there. To restrict the anonymous analytics iOS itself sends to Apple, use iOS Settings &gt; Privacy &gt; Analytics.</p>
+      <p><strong>e) Right to restriction</strong>: You may stop ad-related data collection entirely by upgrading to Premium. On the Free tier, you may block IDFA by selecting "Ask Apps Not To Track" under iOS Settings &gt; Privacy &gt; Tracking. As described in Section 5, the app sends anonymous crash reports (Firebase Crashlytics) and anonymous usage statistics (Firebase Analytics); neither contains financial data or a user identifier. If you wish to stop this, you may request it via our support address. To restrict the anonymous analytics iOS itself sends to Apple, use iOS Settings &gt; Privacy &gt; Analytics.</p>
       <p><strong>f) Right to data portability</strong>: Settings &gt; Export Backup outputs data in JSON; transfer to another app is free.</p>
       <p><strong>g) Right to object</strong>: No automated decision-making or in-app user profiling is performed. For AdMob ads shown to Free tier users, you may object to personalized ad targeting by declining permission in the ATT prompt. Premium members are shown no ads at all.</p>
       <p><strong>h) Right to complaint</strong>: You may file a complaint with Turkey's KVKK Authority (kvkk.gov.tr) or your local EU data protection authority.</p>
