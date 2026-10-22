@@ -1,6 +1,6 @@
 # Dilek Eminoğlu — Uygulamalar
 
-> Dilek Eminoğlu tarafından geliştirilen, gizlilik odaklı iOS ve macOS uygulamaları. Ortak ilke: veriler cihazda tutulur, kullanıcı takip edilmez, uygulamalar çevrimdışı çalışır. Dört uygulama: Parametre (kişisel finans, iOS), Kutula/BoxKeeper (eşya & kutu envanteri, iOS), Clippa (pano yöneticisi, macOS), MD Preview (Markdown görüntüleyici/editör, macOS & iOS).
+> Dilek Eminoğlu tarafından geliştirilen, gizlilik odaklı iOS ve macOS uygulamaları. Ortak ilke: veriler cihazda tutulur, kullanıcı takip edilmez, uygulamalar çevrimdışı çalışır. Beş uygulama: Parametre (kişisel finans, iOS), Kutula/BoxKeeper (eşya & kutu envanteri, iOS), Clippa (pano yöneticisi, macOS), MD Preview (Markdown görüntüleyici/editör, macOS & iOS), Belge Dönüştürücü/ConvertTo (dosya dönüştürücü, iOS & macOS).
 >
 > Ana sayfa: https://dilekeminoglu.github.io/ (TR) · https://dilekeminoglu.github.io/en/ (EN)
 
@@ -35,6 +35,15 @@
 - **Ne yapar:** Markdown (.md) dosyalarını ham metin yerine biçimli gösterir ve düzenler. Üç okuma teması (Açık/Koyu/Sepia), içindekiler, canlı bölünmüş ekran editör, belge içi arama, sözdizimi vurgulu kod blokları, PDF dışa aktarma.
 - **Fiyat:** Ücretsiz. **Platform:** macOS 14.6+, iPhone & iPad. **Uygulama dili:** İngilizce (site TR+EN). **Gizlilik:** Tamamen çevrimdışı; belgeler cihazdan çıkmaz (tek istisna: belge içindeki uzak görseller).
 - **SSS:** https://dilekeminoglu.github.io/mdpreview/sss.html · **Gizlilik:** https://dilekeminoglu.github.io/mdpreview/gizlilik.html · **Blog:** https://dilekeminoglu.github.io/mdpreview/blog/
+
+## Belge Dönüştürücü / ConvertTo — Dosya Dönüştürücü (iOS & macOS)
+
+- **Sayfa:** https://dilekeminoglu.github.io/convertto/ (TR) · https://dilekeminoglu.github.io/convertto/en/ (EN)
+- **App Store:** Yakında yayında.
+- **Ne yapar:** Fotoğraf, belge, tablo, ses ve video dosyalarını cihaz üzerinde dönüştürür; seçilen dosyaya göre yalnızca uygun hedef formatları listeler. HEIC↔JPG/PNG/TIFF/GIF/BMP/AVIF, PDF↔görsel/metin/Word, Word (DOCX)/RTF/HTML/Markdown/TXT, Excel (XLSX)↔CSV/JSON/HTML, M4A/MP3/WAV/AIFF/FLAC, MP4/MOV, videodan GIF ve ses çıkarma. Cihaz üzerinde metin tanıma (OCR), PDF birleştirme/bölme, 50 dosyaya kadar toplu dönüştürme, Paylaş menüsü uzantısı.
+- **Fiyat:** Ücretsiz (reklamlı). **Platform:** iOS 17+ (iPhone & iPad), macOS 14+. **Dil:** Türkçe, İngilizce.
+- **Gizlilik:** Dosyalar ve içerikleri cihazdan çıkmaz. iOS'ta Google AdMob reklamları (ATT/UMP rızası); anonim kullanım ve çökme raporları için Firebase Analytics ve Crashlytics (dosya adı/içeriği gönderilmez).
+- **SSS:** https://dilekeminoglu.github.io/convertto/sss.html · **Gizlilik:** https://dilekeminoglu.github.io/convertto/gizlilik.html · **Blog:** https://dilekeminoglu.github.io/convertto/blog/
 
 ## Parametre — destek içeriği
 

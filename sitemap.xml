@@ -90,4 +90,25 @@
   <url><loc>https://dilekeminoglu.github.io/mdpreview/blog/markdown-nedir.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://dilekeminoglu.github.io/mdpreview/blog/md-dosyasi-nasil-acilir.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <!-- Belge Dönüştürücü / ConvertTo -->
+  <url>
+    <loc>https://dilekeminoglu.github.io/convertto/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dilekeminoglu.github.io/convertto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dilekeminoglu.github.io/convertto/en/"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dilekeminoglu.github.io/convertto/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dilekeminoglu.github.io/convertto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dilekeminoglu.github.io/convertto/en/"/>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/sss.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/gizlilik.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/en/faq.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/en/privacy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/blog/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/blog/heic-jpg-nasil-cevrilir.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://dilekeminoglu.github.io/convertto/blog/pdf-word-cevirme-birlestirme.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
